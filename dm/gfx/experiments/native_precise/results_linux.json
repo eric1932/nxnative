@@ -1,0 +1,1037 @@
+{
+  "scope": "single source-text rewrite only; not whole shader compilation",
+  "input_type": "synthetic, no game shader files",
+  "git_revision": "84e63860acf19f06bdc0133066739f1b755108e5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "linux",
+  "architecture": "x86_64",
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "upstream_module_sha256": "42add67e579d19992d86215f0ae71db62abc08dd4f694c849f0b5d836569957c",
+  "candidate_sha256": {
+    "precise_native.cpp": "63f64d123f4402f0ea8bfe5962b151309eba2907813c577aeb53238a7c4c773a",
+    "candidates.py": "e365bb2981fc6fe6cd35da33c62dadb5321ed16b18f0ebcc633fb4b40f86d284"
+  },
+  "repeats": 7,
+  "results": [
+    {
+      "case": "synthetic/1024/absent",
+      "characters": 1024,
+      "replacements": 0,
+      "source_sha256": "cb1dfb2e6831ca47596ca71c805ef20b62d1993016937993d6426417e50676c8",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 8.663865234375,
+        "prefix_python": 0.7034842529296875,
+        "native": 0.4610961151123047
+      },
+      "samples_microseconds": {
+        "upstream": [
+          8.18249853515625,
+          9.28178564453125,
+          8.663865234375,
+          12.1616962890625,
+          8.8276767578125,
+          8.47669287109375,
+          8.479275390625
+        ],
+        "prefix_python": [
+          0.7267956848144531,
+          0.708796875,
+          0.6687030639648438,
+          0.6679631042480468,
+          0.7034842529296875,
+          0.7348674011230468,
+          0.6588483581542969
+        ],
+        "native": [
+          0.46674490356445314,
+          0.4759141693115234,
+          0.7353567352294922,
+          0.45943988037109373,
+          0.44885427856445315,
+          0.4610961151123047,
+          0.4411768035888672
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2048,
+        "prefix_python": 32768,
+        "native": 65536
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 12.315649139684359,
+        "native": 18.789716396254665
+      }
+    },
+    {
+      "case": "synthetic/1024/sparse",
+      "characters": 1024,
+      "replacements": 3,
+      "source_sha256": "40f49fc5a27ff026ebbf11407cf49ed2f4979b6f79294b71fcd9c504124fda19",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 8.84580517578125,
+        "prefix_python": 1.8082447509765625,
+        "native": 0.6666418151855469
+      },
+      "samples_microseconds": {
+        "upstream": [
+          8.84580517578125,
+          9.1118564453125,
+          8.87772314453125,
+          9.44400830078125,
+          8.37049267578125,
+          8.32486669921875,
+          8.46634033203125
+        ],
+        "prefix_python": [
+          1.77395458984375,
+          1.9118544921875,
+          1.8501195068359375,
+          1.801414306640625,
+          1.7117879638671876,
+          1.8082447509765625,
+          1.8496976318359375
+        ],
+        "native": [
+          0.7013921813964844,
+          0.6052854309082031,
+          0.6860064086914063,
+          0.6861650085449219,
+          0.6161768188476563,
+          0.6447545166015625,
+          0.6666418151855469
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2048,
+        "prefix_python": 8192,
+        "native": 32768
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 4.8919291323832,
+        "native": 13.26920240267135
+      }
+    },
+    {
+      "case": "synthetic/1024/dense",
+      "characters": 1024,
+      "replacements": 40,
+      "source_sha256": "e1a1a1f4723c20571581c4d20f071fce5eb9bc4df00a32598dcd5a43d4b8962e",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 13.24681640625,
+        "prefix_python": 14.202400390625,
+        "native": 1.322642578125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          14.57513134765625,
+          13.45598486328125,
+          13.07596240234375,
+          13.573580078125,
+          12.9572431640625,
+          12.933388671875,
+          13.24681640625
+        ],
+        "prefix_python": [
+          14.4114951171875,
+          15.31812353515625,
+          14.202400390625,
+          14.02881298828125,
+          13.63951904296875,
+          14.85222900390625,
+          14.164794921875
+        ],
+        "native": [
+          1.4324959106445312,
+          1.3646420288085936,
+          1.2793955078125,
+          1.322642578125,
+          1.2867247314453125,
+          1.2380965576171874,
+          1.343220458984375
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2048,
+        "prefix_python": 2048,
+        "native": 16384
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 0.9327167268847186,
+        "native": 10.015416579911488
+      }
+    },
+    {
+      "case": "synthetic/1024/decoys",
+      "characters": 1024,
+      "replacements": 0,
+      "source_sha256": "6bffb9a4e808e4a5a43e853093f0233475952b9a5d95449e2a2f635c4d375ddb",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 9.66025244140625,
+        "prefix_python": 6.072253662109375,
+        "native": 0.8916939086914063
+      },
+      "samples_microseconds": {
+        "upstream": [
+          9.248845703125,
+          8.9590224609375,
+          9.72869384765625,
+          9.05159423828125,
+          10.1188212890625,
+          14.8868076171875,
+          9.66025244140625
+        ],
+        "prefix_python": [
+          6.08615380859375,
+          5.9179287109375,
+          6.82178271484375,
+          6.072253662109375,
+          6.036094482421875,
+          6.915777099609375,
+          5.9681708984375
+        ],
+        "native": [
+          0.8916939086914063,
+          0.8888744201660156,
+          0.9367124328613281,
+          0.8872166137695312,
+          0.9454765930175781,
+          0.8615397338867188,
+          0.9084574890136718
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2048,
+        "prefix_python": 4096,
+        "native": 32768
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 1.590884205263994,
+        "native": 10.833596985744835
+      }
+    },
+    {
+      "case": "synthetic/32768/absent",
+      "characters": 32768,
+      "replacements": 0,
+      "source_sha256": "c995536e7100f4b5e8a5ce3794b20a132fdcf01d0bd109e170b578f8af0df743",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 257.08715625,
+        "prefix_python": 19.4521884765625,
+        "native": 14.8828955078125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          257.08715625,
+          284.330953125,
+          254.87928125,
+          277.192046875,
+          255.82478125,
+          288.486921875,
+          254.669578125
+        ],
+        "prefix_python": [
+          16.2946171875,
+          19.7776513671875,
+          23.118076171875,
+          19.4521884765625,
+          16.605849609375,
+          22.6745947265625,
+          16.18812890625
+        ],
+        "native": [
+          15.357958984375,
+          14.7585966796875,
+          15.0439296875,
+          16.0663427734375,
+          14.8828955078125,
+          13.5741513671875,
+          14.256265625
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 64,
+        "prefix_python": 1024,
+        "native": 1024
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 13.216361570820604,
+        "native": 17.274001293299875
+      }
+    },
+    {
+      "case": "synthetic/32768/sparse",
+      "characters": 32768,
+      "replacements": 24,
+      "source_sha256": "4273b1fad110aaef8618830b6b758af82c5342b5f1f245a7ce754f63ae85694a",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 311.610125,
+        "prefix_python": 30.067828125,
+        "native": 17.56131640625
+      },
+      "samples_microseconds": {
+        "upstream": [
+          264.728390625,
+          267.51290625,
+          341.566140625,
+          356.76025,
+          311.610125,
+          336.550125,
+          285.271203125
+        ],
+        "prefix_python": [
+          28.13948828125,
+          30.067828125,
+          28.415861328125,
+          30.27227734375,
+          31.4847734375,
+          29.13671484375,
+          36.15978515625
+        ],
+        "native": [
+          16.162953125,
+          15.3743408203125,
+          21.1704873046875,
+          20.864849609375,
+          16.76428125,
+          17.56131640625,
+          17.563466796875
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 64,
+        "prefix_python": 512,
+        "native": 1024
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 10.363572776342654,
+        "native": 17.744121100688055
+      }
+    },
+    {
+      "case": "synthetic/32768/dense",
+      "characters": 32768,
+      "replacements": 1293,
+      "source_sha256": "734cc4b42ab95ca42e3f2fca4ef0dbe6cfd7b8543c8a0d15f692b73abe196108",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 432.29265625,
+        "prefix_python": 471.36153125,
+        "native": 38.877580078125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          465.188125,
+          412.65128125,
+          464.4000625,
+          432.29265625,
+          444.0265,
+          386.15378125,
+          406.74425
+        ],
+        "prefix_python": [
+          550.2190625,
+          469.79821875,
+          500.1685,
+          472.8863125,
+          463.3804375,
+          471.36153125,
+          456.704375
+        ],
+        "native": [
+          39.061744140625,
+          37.109634765625,
+          39.773013671875,
+          33.223982421875,
+          38.681080078125,
+          42.395783203125,
+          38.877580078125
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 32,
+        "prefix_python": 32,
+        "native": 512
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 0.9171148419846789,
+        "native": 11.119330353928982
+      }
+    },
+    {
+      "case": "synthetic/32768/decoys",
+      "characters": 32768,
+      "replacements": 0,
+      "source_sha256": "f5415958d3894eed409284759ec5982b7b5dd797acad0afa0aa0deed6dc83b1b",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 279.571734375,
+        "prefix_python": 189.7703359375,
+        "native": 27.067625
+      },
+      "samples_microseconds": {
+        "upstream": [
+          275.309671875,
+          303.2944375,
+          277.90515625,
+          279.571734375,
+          278.822015625,
+          481.0906875,
+          300.57775
+        ],
+        "prefix_python": [
+          192.0553515625,
+          200.5219609375,
+          189.0618515625,
+          188.8874375,
+          194.74346875,
+          189.7703359375,
+          179.782046875
+        ],
+        "native": [
+          27.4835166015625,
+          26.217787109375,
+          27.067625,
+          27.8563056640625,
+          29.42454296875,
+          24.4169326171875,
+          26.0328583984375
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 64,
+        "prefix_python": 128,
+        "native": 1024
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 1.4732109367560782,
+        "native": 10.328639264619634
+      }
+    },
+    {
+      "case": "synthetic/225280/absent",
+      "characters": 225280,
+      "replacements": 0,
+      "source_sha256": "110e62edfbc8fd950cc7dbecb0895862b7a36325b7ef38da65dd27093bbf4ff7",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 1808.164375,
+        "prefix_python": 117.23196484375,
+        "native": 102.09726953125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          1966.30825,
+          1787.9538125,
+          1848.248625,
+          1661.8985,
+          1808.164375,
+          1743.265125,
+          1924.41625
+        ],
+        "prefix_python": [
+          126.55238671875,
+          120.51453515625,
+          110.74102734375,
+          112.25237109375,
+          117.23196484375,
+          119.3764140625,
+          115.22737109375
+        ],
+        "native": [
+          102.0346015625,
+          104.91680078125,
+          104.690328125,
+          102.09726953125,
+          91.9480390625,
+          99.6734140625,
+          103.74730078125
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 16,
+        "prefix_python": 256,
+        "native": 256
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 15.423817023027562,
+        "native": 17.710212851936806
+      }
+    },
+    {
+      "case": "synthetic/225280/sparse",
+      "characters": 225280,
+      "replacements": 147,
+      "source_sha256": "54d4b1082ee40e76bd248bcbca5989fddd74d9c139796f09c67806cd0d7e3536",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 1809.9514375,
+        "prefix_python": 193.3629453125,
+        "native": 111.8687890625
+      },
+      "samples_microseconds": {
+        "upstream": [
+          1789.4655,
+          2166.131875,
+          1774.8396875,
+          1970.786875,
+          1885.9881875,
+          1809.9514375,
+          1722.39175
+        ],
+        "prefix_python": [
+          196.0378515625,
+          193.76434375,
+          191.988765625,
+          187.273359375,
+          267.1103359375,
+          193.1958984375,
+          193.3629453125
+        ],
+        "native": [
+          111.8687890625,
+          114.2513671875,
+          105.1379140625,
+          122.3670546875,
+          120.1898671875,
+          109.1058671875,
+          109.3065546875
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 16,
+        "prefix_python": 128,
+        "native": 128
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 9.360384093109879,
+        "native": 16.179235090216253
+      }
+    },
+    {
+      "case": "synthetic/225280/dense",
+      "characters": 225280,
+      "replacements": 8892,
+      "source_sha256": "98ec319390ef67971638fce8d6683a2464e33802e50a6309a210ee6089411b5b",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 2860.865375,
+        "prefix_python": 3188.160875,
+        "native": 255.3758125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          2800.933625,
+          2665.24,
+          2864.70875,
+          2860.865375,
+          2832.783125,
+          3187.491125,
+          3165.18375
+        ],
+        "prefix_python": [
+          2999.64375,
+          3188.160875,
+          3011.707,
+          3356.06575,
+          3295.531875,
+          3683.437625,
+          3093.276375
+        ],
+        "native": [
+          240.358296875,
+          256.116,
+          244.44728125,
+          255.3758125,
+          255.43121875,
+          561.989015625,
+          253.666046875
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 8,
+        "prefix_python": 8,
+        "native": 64
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 0.8973403435922912,
+        "native": 11.202569840086166
+      }
+    },
+    {
+      "case": "synthetic/225280/decoys",
+      "characters": 225280,
+      "replacements": 0,
+      "source_sha256": "9f4aaf58e335faf27afb273d6c6126f317459988e2206b2926ef247afbb0f1cf",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 2007.16375,
+        "prefix_python": 1247.144625,
+        "native": 190.0685234375
+      },
+      "samples_microseconds": {
+        "upstream": [
+          2248.787375,
+          1908.72375,
+          2021.653,
+          1939.420125,
+          2007.16375,
+          1912.307875,
+          2087.863125
+        ],
+        "prefix_python": [
+          1247.144625,
+          1802.118375,
+          1388.1820625,
+          1184.9450625,
+          1330.6789375,
+          1199.5365,
+          1235.194125
+        ],
+        "native": [
+          200.64278125,
+          189.3813125,
+          181.9043203125,
+          181.78359375,
+          190.0685234375,
+          191.960515625,
+          216.668765625
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 8,
+        "prefix_python": 16,
+        "native": 128
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 1.609407369253586,
+        "native": 10.560211200146526
+      }
+    },
+    {
+      "case": "synthetic/1048576/absent",
+      "characters": 1048576,
+      "replacements": 0,
+      "source_sha256": "18c62f2f8ca476163e8f77029487f03b2b12eb2f0cf2f1838fcdbf49e5723e7c",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 8460.6725,
+        "prefix_python": 532.2706875,
+        "native": 460.545671875
+      },
+      "samples_microseconds": {
+        "upstream": [
+          8552.581,
+          8568.7005,
+          8460.6725,
+          9110.4685,
+          7851.8725,
+          8046.3765,
+          7738.912
+        ],
+        "prefix_python": [
+          532.2706875,
+          590.93115625,
+          611.9400625,
+          500.54809375,
+          499.848,
+          487.0226875,
+          584.61003125
+        ],
+        "native": [
+          460.545671875,
+          488.015734375,
+          442.25521875,
+          494.05784375,
+          462.645390625,
+          459.899203125,
+          440.300234375
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2,
+        "prefix_python": 32,
+        "native": 64
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 15.895431964774502,
+        "native": 18.370973861407546
+      }
+    },
+    {
+      "case": "synthetic/1048576/sparse",
+      "characters": 1048576,
+      "replacements": 678,
+      "source_sha256": "5d98810ed44c20ce8a8db72848bd60505b24b39917c17a97220ffb6d240ff690",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 8448.5785,
+        "prefix_python": 921.52975,
+        "native": 609.025375
+      },
+      "samples_microseconds": {
+        "upstream": [
+          9398.9815,
+          8439.8105,
+          8098.3645,
+          8355.403,
+          8448.5785,
+          10545.8965,
+          9949.786
+        ],
+        "prefix_python": [
+          935.499,
+          921.52975,
+          919.312125,
+          859.77275,
+          851.5866875,
+          950.7820625,
+          1017.77575
+        ],
+        "native": [
+          609.025375,
+          616.30915625,
+          614.9959375,
+          579.63471875,
+          582.34353125,
+          641.65728125,
+          606.97228125
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2,
+        "prefix_python": 16,
+        "native": 32
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 9.167993219969295,
+        "native": 13.872293087952205
+      }
+    },
+    {
+      "case": "synthetic/1048576/dense",
+      "characters": 1048576,
+      "replacements": 41391,
+      "source_sha256": "ab5f0525758b96003cde0bb15d6d8e1197066d40043076a1bd491ce032c71e8e",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 17640.901,
+        "prefix_python": 22653.47,
+        "native": 1213.8819375
+      },
+      "samples_microseconds": {
+        "upstream": [
+          16008.831,
+          17640.901,
+          30917.9665,
+          22614.1815,
+          20952.176,
+          16190.06,
+          15993.3925
+        ],
+        "prefix_python": [
+          74743.03,
+          21227.798,
+          39261.426,
+          35515.755,
+          21028.256,
+          20060.906,
+          22653.47
+        ],
+        "native": [
+          1175.9490625,
+          1176.508625,
+          1171.850375,
+          1322.588,
+          1213.8819375,
+          1226.151,
+          1310.1454375
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2,
+        "prefix_python": 1,
+        "native": 16
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 0.7787284243870807,
+        "native": 14.532633244656052
+      }
+    },
+    {
+      "case": "synthetic/1048576/decoys",
+      "characters": 1048576,
+      "replacements": 0,
+      "source_sha256": "1cf542e1acd6d853ca5a1622f85cadffcb7aad1422c6ada3b06a1a460d32aa90",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 9605.06,
+        "prefix_python": 6773.20875,
+        "native": 943.4516875
+      },
+      "samples_microseconds": {
+        "upstream": [
+          12449.6915,
+          9605.06,
+          9963.8075,
+          8913.7745,
+          8551.7645,
+          9868.7435,
+          9295.823
+        ],
+        "prefix_python": [
+          6773.20875,
+          8138.25775,
+          7032.941,
+          6159.83975,
+          6166.1095,
+          6185.22325,
+          7238.38
+        ],
+        "native": [
+          863.38325,
+          959.07275,
+          931.1505625,
+          973.5358125,
+          885.0065,
+          988.6105,
+          943.4516875
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 2,
+        "prefix_python": 4,
+        "native": 16
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 1.418095965224754,
+        "native": 10.180765085546575
+      }
+    },
+    {
+      "case": "upstream-bit0-fixture/4/original",
+      "characters": 1819,
+      "replacements": 0,
+      "source_sha256": "fa5ca0040218c9df59312756f04c26457747af186952beb9ba29b7ca13a193b0",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 15.1280908203125,
+        "prefix_python": 1.0007734375,
+        "native": 0.7313479919433594
+      },
+      "samples_microseconds": {
+        "upstream": [
+          16.0584990234375,
+          15.0136396484375,
+          15.272703125,
+          14.4760712890625,
+          15.1280908203125,
+          15.094650390625,
+          15.412767578125
+        ],
+        "prefix_python": [
+          1.058312744140625,
+          1.0007734375,
+          1.2337032470703124,
+          1.0073531494140624,
+          0.9658867797851562,
+          0.997144287109375,
+          0.9266038208007813
+        ],
+        "native": [
+          0.7657230224609375,
+          0.75588671875,
+          0.6565316467285156,
+          0.74073779296875,
+          0.7313479919433594,
+          0.7072753601074219,
+          0.6800870971679688
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 1024,
+        "prefix_python": 16384,
+        "native": 32768
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 15.11639923028283,
+        "native": 20.685215502012515
+      }
+    },
+    {
+      "case": "upstream-bit0-fixture/4/with-calls",
+      "characters": 1859,
+      "replacements": 5,
+      "source_sha256": "02daa22242ff6d7edb88b5e175672565640050726f4416a7e5291c1d8ac11351",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 18.3601494140625,
+        "prefix_python": 3.1735230712890625,
+        "native": 1.1158140869140625
+      },
+      "samples_microseconds": {
+        "upstream": [
+          24.11501171875,
+          18.3601494140625,
+          17.0103173828125,
+          17.64336328125,
+          18.368873046875,
+          18.449943359375,
+          16.783294921875
+        ],
+        "prefix_python": [
+          3.989201904296875,
+          3.41307177734375,
+          3.1554134521484376,
+          3.1735230712890625,
+          8.854972900390624,
+          3.0295054931640624,
+          3.075609130859375
+        ],
+        "native": [
+          1.1424003295898437,
+          1.3499659423828125,
+          1.1158140869140625,
+          0.9873914184570313,
+          1.2938937377929687,
+          0.9979884643554687,
+          0.945939697265625
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 1024,
+        "prefix_python": 8192,
+        "native": 16384
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 5.785415452046719,
+        "native": 16.454487919972426
+      }
+    },
+    {
+      "case": "upstream-bit0-fixture/3200/original",
+      "characters": 225539,
+      "replacements": 0,
+      "source_sha256": "d75d9b727ca3f19ee2594e7540da2a4e83f5c9b3f3a0825275a6e5908cb2e13a",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 1881.604,
+        "prefix_python": 102.18212109375,
+        "native": 97.3604296875
+      },
+      "samples_microseconds": {
+        "upstream": [
+          2211.190625,
+          1828.691625,
+          1881.604,
+          1795.242375,
+          2192.9185,
+          2344.96125,
+          1813.940625
+        ],
+        "prefix_python": [
+          103.70759375,
+          101.8795625,
+          103.985921875,
+          99.16800390625,
+          96.5061328125,
+          102.18212109375,
+          103.357921875
+        ],
+        "native": [
+          125.009953125,
+          97.3604296875,
+          84.68526953125,
+          90.18729296875,
+          93.4271875,
+          101.115515625,
+          113.31694921875
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 8,
+        "prefix_python": 256,
+        "native": 256
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 18.414219433492352,
+        "native": 19.32616778746178
+      }
+    },
+    {
+      "case": "upstream-bit0-fixture/3200/with-calls",
+      "characters": 251147,
+      "replacements": 3201,
+      "source_sha256": "17ee8c8b5b271155f458700adb32e896d66fd0b74394ebe5b94de03a08533b35",
+      "output_equal": true,
+      "microseconds_per_call": {
+        "upstream": 2557.9305,
+        "prefix_python": 1341.12275,
+        "native": 161.081078125
+      },
+      "samples_microseconds": {
+        "upstream": [
+          2547.61225,
+          2569.35525,
+          2604.942625,
+          2546.08,
+          2658.6075,
+          2557.9305,
+          2435.84725
+        ],
+        "prefix_python": [
+          1705.929375,
+          1348.74,
+          1341.12275,
+          1329.98725,
+          1315.5980625,
+          1246.54375,
+          1349.442875
+        ],
+        "native": [
+          151.06421875,
+          213.44453125,
+          170.33990625,
+          154.140578125,
+          160.2833125,
+          161.081078125,
+          231.4155625
+        ]
+      },
+      "iterations_per_sample": {
+        "upstream": 8,
+        "prefix_python": 16,
+        "native": 64
+      },
+      "speedup_vs_upstream": {
+        "upstream": 1.0,
+        "prefix_python": 1.907305278357257,
+        "native": 15.879770173968097
+      }
+    }
+  ]
+}

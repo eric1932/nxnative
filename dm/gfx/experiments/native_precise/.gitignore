@@ -1,0 +1,3 @@
+_precise_native*.so
+_precise_native*.pyd
+__pycache__/
