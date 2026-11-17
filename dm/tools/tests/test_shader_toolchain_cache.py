@@ -25,6 +25,7 @@ TOOLS = REPO / 'dm/gfx/tools'
 sys.path.insert(0, str(TOOLS))
 import dmsh_chain  # noqa: E402
 import dmsh_mtlcache  # noqa: E402
+import dmsh_rewrite  # noqa: E402
 import dmsh_rt_compile  # noqa: E402
 import shader_cache  # noqa: E402
 sys.path.insert(0, str(REPO / 'dm/tools'))
@@ -319,7 +320,7 @@ class TargetSelection(unittest.TestCase):
                         return p.read_bytes() if p.is_file() else None
                     ns: dict[str, Any] = dict(os=os, json=json, subprocess=subprocess, out=td, w=td, TARGETS=targets,
                               IOSOUT=str(ios) if 'ios' in targets else None, MESH_STATS=collections.Counter(),
-                              MTL=types.SimpleNamespace(compile=compile_target), dmsh_mesh=types.SimpleNamespace(compose=compose),
+                              MTL=types.SimpleNamespace(compile=compile_target), dmsh_mesh=types.SimpleNamespace(compose=compose), dmsh_rewrite=dmsh_rewrite,
                               output=output, commit=mock.Mock())
                     exec(compile(ast.Module(body=[function], type_ignores=[]), '<mesh targets>', 'exec'), ns)
                     ns['mesh_finish'](('vertex', 'geometry'))
